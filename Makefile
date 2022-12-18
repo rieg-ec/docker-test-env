@@ -24,6 +24,9 @@ services-ps:
 services-up:
 	docker-compose $(DOCKER_COMPOSE_ARGS) up -d
 
+services-build:
+	docker-compose $(DOCKER_COMPOSE_ARGS) build
+
 services-down:
 	docker-compose $(DOCKER_COMPOSE_ARGS) stop
 
